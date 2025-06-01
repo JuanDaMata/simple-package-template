@@ -1,27 +1,61 @@
-# package_name
+# 🧮 calculadora_python
 
-Description. 
-The package package_name is used to:
-	- 
-	-
+Uma calculadora simples desenvolvida em Python, com funcionalidades básicas como soma, subtração, multiplicação, divisão e porcentagem. Inclui também um menu interativo de terminal para facilitar o uso.
 
-## Installation
+---
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install package_name
+## 📦 Instalação
+
+Você pode instalar o pacote diretamente do PyPI com:
 
 ```bash
-pip install package_name
+pip install calculadora-python
 ```
 
-## Usage
+## 🚀 Funcionalidades
+### O pacote calculadora_python oferece:
 
-```python
-from package_name import file1_name
-file1_name.my_function()
-```
+somar(a, b) — Soma dois números
 
-## Author
-My_name
+subtrair(a, b) — Subtrai o segundo número do primeiro
 
-## License
-[MIT](https://choosealicense.com/licenses/mit/)
+multiplicar(a, b) — Multiplica dois números
+
+dividir(a, b) — Divide o primeiro número pelo segundo
+
+porcentagem(valor, percentual) — Retorna o valor percentual
+
+main() — Inicia o menu interativo no terminal
+
+## 💻 Exemplo de uso
+from calculadora_python import somar, dividir, main
+
+print(somar(10, 5))      # 15
+print(dividir(20, 4))    # 5.0
+
+Inicia a interface de menu no terminal
+main()
+
+## 📁 Organização do pacote
+calculadora_python/<br>
+├── __init__.py<br>
+├── operacoes.py<br>
+└── menu_operacoes.py<br>
+
+operacoes.py: Contém as funções matemáticas.<br>
+
+menu_operacoes.py: Contém a lógica de entrada de dados e o menu interativo.<br>
+
+__init__.py: Reexporta as funções principais para facilitar o uso do pacote.
+
+
+## 🐍 Requisitos
+Python >= 3.8
+
+## 👤 Autor
+Juan da Mata<br>
+📧 juandamata200@hotmail.com<br>
+[🔗 GitHub - JuanDaMata](https://github.com/JuanDaMata/)
+
+## 📝License
+[MIT](https://opensource.org/licenses/MIT)
